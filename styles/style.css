@@ -239,6 +239,22 @@ h3 {
   flex-wrap: wrap;
 }
 
+.my-custom-button {
+  background-color: #1db954;
+  border-color: #000000;
+  font-weight: bold;
+}
+
+.my-custom-button:hover {
+  background-color: beige;
+  color: #000000;
+  border-color: #000000;
+}
+
+.card-button {
+  padding: 5px 0;
+}
+
 /*SECCION SINGLES */
 
 .single-container h2 {
