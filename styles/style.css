@@ -264,6 +264,27 @@ h3 {
   margin: 16px 0;
 }
 
+/*CSS TOUR*/
+
+.tour-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin: 0 10px;
+  border-bottom: 2px solid red;
+}
+
+.tour-row p {
+  color: red;
+  font-size: 20px;
+  font-family: "Martian Mono", monospace;
+}
+
+.tour-dates {
+  margin: 20px;
+}
+
 @media (max-width: 450px) {
   body {
     margin: 0 16px;
