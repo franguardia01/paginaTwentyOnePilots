@@ -54,7 +54,7 @@ p {
 }
 
 .nav-link:hover {
-  color: beige;
+  color: #f5f5dc;
 }
 
 main {
@@ -128,7 +128,7 @@ main {
 }
 
 .redes li a:hover {
-  color: #6a6767;
+  color: #f5f5dc;
 }
 
 .musica li {
@@ -139,7 +139,7 @@ main {
 }
 
 .musica li a:hover {
-  color: #6a6767;
+  color: #f5f5dc;
 }
 
 .redes a {
