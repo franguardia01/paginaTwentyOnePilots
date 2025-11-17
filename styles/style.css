@@ -235,6 +235,27 @@ h3 {
   margin: 16px 0;
 }
 
+.carousel-caption h3 {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.btn-single {
+  text-decoration: none;
+  color: #e35042;
+  border: 1px solid #e35042;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-family: "Martian Mono", monospace;
+  text-align: center;
+}
+
+.btn-single:hover {
+  background-color: #e35042;
+  color: #000000;
+}
+
 /*CSS TOUR*/
 
 .tour-dates {
