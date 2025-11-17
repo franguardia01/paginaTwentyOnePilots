@@ -272,6 +272,10 @@ h3 {
   border-bottom: 2px solid #e35042;
 }
 
+.tour-row:last-of-type {
+  border: none;
+}
+
 .tour-row p {
   color: #e35042;
   font-size: 20px;
@@ -349,6 +353,17 @@ h3 {
 
   .segundo-articulo {
     flex-direction: column-reverse;
+  }
+
+  .tour-row {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "fecha"
+      "ciudad"
+      "lugar"
+      "tickets";
+    justify-items: center;
+    margin-top: 10px;
   }
 
   .footer {
