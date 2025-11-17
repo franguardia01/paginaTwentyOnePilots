@@ -302,9 +302,22 @@ h3 {
 }
 
 .btn-tickets {
+  background: none;
+  color: #f00;
+  border: 1px solid #f00;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Martian Mono", monospace;
+  font-weight: 300;
   grid-area: tickets;
   align-self: center;
   text-align: center;
+}
+
+.btn-tickets:hover {
+  background-color: #f00;
+  color: #000000;
 }
 
 @media (max-width: 450px) {
