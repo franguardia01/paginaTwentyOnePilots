@@ -277,11 +277,11 @@ h3 {
   gap: 20px;
   padding: 15px 0;
   margin: 0 10px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #e35042;
 }
 
 .tour-row p {
-  color: red;
+  color: #e35042;
   font-size: 20px;
   font-family: "Martian Mono", monospace;
 }
@@ -303,8 +303,8 @@ h3 {
 
 .btn-tickets {
   background: none;
-  color: #f00;
-  border: 1px solid #f00;
+  color: #e35042;
+  border: 1px solid #e35042;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 10px;
@@ -316,7 +316,7 @@ h3 {
 }
 
 .btn-tickets:hover {
-  background-color: #f00;
+  background-color: #e35042;
   color: #000000;
 }
 
