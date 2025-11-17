@@ -266,10 +266,15 @@ h3 {
 
 /*CSS TOUR*/
 
+.tour-dates {
+  margin: 20px;
+}
+
 .tour-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 180px 200px 1fr 100px;
+  grid-template-areas: "fecha ciudad lugar tickets";
+  gap: 20px;
   padding: 15px 0;
   margin: 0 10px;
   border-bottom: 2px solid red;
@@ -281,8 +286,25 @@ h3 {
   font-family: "Martian Mono", monospace;
 }
 
-.tour-dates {
-  margin: 20px;
+.tour-date {
+  grid-area: fecha;
+  align-self: center;
+}
+
+.tour-location {
+  grid-area: ciudad;
+  align-self: center;
+}
+
+.tour-venue {
+  grid-area: lugar;
+  align-self: center;
+}
+
+.btn-tickets {
+  grid-area: tickets;
+  align-self: center;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
