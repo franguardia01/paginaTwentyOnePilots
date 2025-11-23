@@ -85,7 +85,7 @@ main {
   height: auto;
 }
 
-.footer {
+footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
@@ -120,17 +120,7 @@ main {
   padding-top: 5px;
 }
 
-.redes li {
-  font-weight: 600;
-  font-size: 20px;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.redes li a:hover {
-  color: #f5f5dc;
-}
-
+.redes li,
 .musica li {
   font-weight: 600;
   font-size: 20px;
@@ -138,15 +128,12 @@ main {
   text-decoration: none;
 }
 
+.redes li a:hover,
 .musica li a:hover {
   color: #f5f5dc;
 }
 
-.redes a {
-  color: red;
-  text-decoration: none;
-}
-
+.redes a,
 .musica a {
   color: red;
   text-decoration: none;
