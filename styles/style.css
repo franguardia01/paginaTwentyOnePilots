@@ -316,6 +316,29 @@ h3 {
   color: #000000;
 }
 
+/*CSS CONTACTO*/
+
+.contact-form-propio {
+  background-color: #fde200;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.form-control {
+  color: #f5f5dc;
+  border: 1px solid red;
+}
+
+.btn-contact-propio {
+  background-color: #ff1d1d;
+  border-color: darkred;
+}
+
+.btn-contact-propio:hover {
+  background-color: #c00;
+  border-color: #900;
+}
+
 @media (max-width: 450px) {
   body {
     margin: 0 16px;
@@ -366,7 +389,7 @@ h3 {
     margin-top: 10px;
   }
 
-  .footer {
+  footer {
     grid-template-columns: 1fr;
     grid-template-areas:
       "links"
@@ -375,7 +398,7 @@ h3 {
     gap: 30px;
   }
 
-  .footer img {
+  footer img {
     width: 150px;
   }
 

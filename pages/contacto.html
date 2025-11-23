@@ -57,6 +57,73 @@
 
     <main>
       <h1>Contacto</h1>
+      <main class="container my-5">
+        <section class="mb-5 text-center">
+          <h2>Contáctanos</h2>
+          <p class="lead">
+            Si tenes alguna pregunta sobre nuestra banda, próximos conciertos o
+            simplemente querés saludar, usa el siguiente formulario.
+          </p>
+          <p>Nuestro equipo te responderá a la brevedad posible.</p>
+        </section>
+
+        <section class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <form class="contact-form-propio" id="contactForm">
+              <div class="mb-3">
+                <label for="nombreInput" class="form-label"
+                  >Nombre Completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreInput"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="emailInput" class="form-label"
+                  >Dirección de Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="asuntoInput" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asuntoInput" />
+              </div>
+
+              <div class="mb-3">
+                <label for="mensajeTextarea" class="form-label"
+                  >Tu Mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="mensajeTextarea"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-contact-propio btn-lg"
+                >
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
     </main>
 
     <footer>
