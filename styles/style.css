@@ -87,25 +87,32 @@ main {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   grid-template-areas:
-    "links logo"
-    "copyright copyright";
+    "redes logo musica"
+    "copyright copyright copyright";
+  align-items: center;
   gap: 80px;
   margin-top: 20px;
   margin-bottom: 40px;
   padding-top: 40px;
+  font-family: "BBH Sans Bogle", sans-serif;
 }
 
-.footer-links-container {
-  grid-area: links;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin-bottom: 50px;
-  line-height: 1.7;
-  letter-spacing: 2px;
+.redes {
+  grid-area: redes;
+  justify-self: end;
+}
+
+.musica {
+  grid-area: musica;
+  justify-self: start;
+}
+
+.footer-logo {
+  grid-area: logo;
+  justify-self: center;
 }
 
 .footer-logo img {
@@ -113,17 +120,10 @@ footer {
   height: auto;
 }
 
-.footer-logo {
-  grid-area: logo;
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-}
-
 .redes li,
 .musica li {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 30px;
   list-style-type: none;
   text-decoration: none;
 }
@@ -390,19 +390,33 @@ h3 {
   }
 
   footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "links"
-      "logo"
-      "copyright";
-    gap: 30px;
+      "redes musica"
+      "logo logo"
+      "copyright copyright";
+    gap: 40px 20px;
+    padding: 30px 10px;
+  }
+
+  .footer-logo {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .redes {
+    justify-self: center;
+  }
+
+  .musica {
+    justify-self: center;
+  }
+
+  .copyright {
+    text-align: center;
   }
 
   footer img {
-    width: 150px;
-  }
-
-  .footer-links-container {
-    gap: 30px;
+    width: 100px;
   }
 }
