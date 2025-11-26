@@ -1,0 +1,62 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "redes logo musica"
+    "copyright copyright copyright";
+  align-items: center;
+  gap: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  font-family: variables.$header-font;
+
+  .redes,
+  .musica {
+    @include mixins.flex(column, center, center);
+
+    li {
+      @extend %estilo-lista-footer;
+
+      a {
+        text-decoration: none;
+        color: variables.$color-primario;
+        transition: color 0.3s ease;
+        &:hover {
+          color: variables.$color-hover;
+        }
+      }
+    }
+  }
+}
+
+.redes {
+  grid-area: redes;
+  justify-self: end;
+}
+
+.musica {
+  grid-area: musica;
+  justify-self: start;
+}
+
+.footer-logo {
+  grid-area: logo;
+  justify-self: center;
+  img {
+    width: 200px;
+    height: auto;
+    @include mixins.hover-scale;
+  }
+}
+
+.copyright {
+  grid-area: copyright;
+  color: variables.$color-primario;
+  text-align: center;
+}

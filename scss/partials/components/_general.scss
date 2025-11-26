@@ -1,0 +1,29 @@
+@use "../utilities/variables";
+
+body {
+  font-family: variables.$main-font;
+  background-color: variables.$color-fondo;
+}
+
+h1 {
+  color: variables.$color-primario;
+  font-size: variables.$color-primario;
+  font-family: variables.$header-font;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-size: variables.$h2-font-size;
+  color: variables.$color-secundario;
+}
+
+p {
+  color: variables.$color-texto;
+  font-size: variables.$p-font-size;
+}
+
+main {
+  background-color: variables.$color-fondo;
+}

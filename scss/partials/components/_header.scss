@@ -1,0 +1,22 @@
+@use "../utilities/variables";
+.nav-logo {
+  width: 45px;
+}
+
+.navbar-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.bg-nav-propio {
+  background-color: variables.$color-fondo;
+}
+
+.nav-link {
+  color: variables.$color-primario;
+  font-size: 25px;
+  font-family: variables.$header-font;
+  &:hover {
+    color: variables.$color-hover;
+  }
+}
