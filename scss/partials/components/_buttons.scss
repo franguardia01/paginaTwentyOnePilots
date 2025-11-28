@@ -21,3 +21,23 @@
     color: #000000;
   }
 }
+
+.btn-tickets {
+  @extend %hover-btn;
+  font-weight: 300;
+  grid-area: tickets;
+  text-align: center;
+  &:hover {
+    background-color: variables.$color-primario;
+    color: #000000;
+  }
+}
+
+.btn-contact-propio {
+  background-color: #ff1d1d;
+  border-color: #900000;
+  &:hover {
+    background-color: #c00;
+    border-color: #900000;
+  }
+}

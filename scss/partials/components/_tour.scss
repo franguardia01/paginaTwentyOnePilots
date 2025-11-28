@@ -1,0 +1,35 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.tour-dates {
+  margin: 20px;
+}
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 180px 200px 1fr 100px;
+  grid-template-areas: "fecha ciudad lugar tickets";
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0 10px;
+  border-bottom: 2px solid variables.$color-primario;
+
+  p {
+    color: variables.$color-secundario;
+    font-size: variables.$p-font-size;
+    font-family: variables.$btn-font;
+    margin: 0;
+  }
+}
+
+.tour-date {
+  grid-area: fecha;
+}
+.tour-location {
+  grid-area: ciudad;
+}
+.tour-venue {
+  grid-area: lugar;
+}

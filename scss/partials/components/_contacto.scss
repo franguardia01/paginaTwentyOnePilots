@@ -1,0 +1,18 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.contact-form-propio {
+  background-color: variables.$color-secundario;
+  padding: 30px;
+  border-radius: 8px;
+  color: #000000;
+}
+
+.form-control {
+  color: variables.$color-hover;
+  border: 1px solid variables.$color-primario;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

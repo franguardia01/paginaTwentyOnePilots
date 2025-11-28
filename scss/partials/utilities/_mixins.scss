@@ -18,11 +18,3 @@
     cursor: pointer;
   }
 }
-
-@mixin borde-animado {
-  transition: all 0.3s;
-
-  &:hover {
-    box-shadow: 0px 0px 10px white;
-  }
-}

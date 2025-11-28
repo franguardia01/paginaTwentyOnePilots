@@ -7,11 +7,11 @@ footer .musica li {
   font-size: 30px;
 }
 
-.btn-single {
+.btn-single, .btn-tickets {
   text-decoration: none;
   color: #d71b0a;
   border: 1px solid #e35042;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-family: "Martian Mono", monospace;
   text-align: center;
   transition: all 0.3s ease;
@@ -58,6 +58,25 @@ footer .musica li {
 .btn-single:hover {
   background-color: #d71b0a;
   color: #000000;
+}
+
+.btn-tickets {
+  font-weight: 300;
+  grid-area: tickets;
+  text-align: center;
+}
+.btn-tickets:hover {
+  background-color: #d71b0a;
+  color: #000000;
+}
+
+.btn-contact-propio {
+  background-color: #ff1d1d;
+  border-color: #900000;
+}
+.btn-contact-propio:hover {
+  background-color: #c00;
+  border-color: #900000;
 }
 
 .card {
@@ -180,7 +199,7 @@ footer .musica li a:hover {
   background-color: #000000;
 }
 .main-content .logo {
-  width: 100%;
+  width: 75%;
   padding: 10px 0;
 }
 .main-content img {
@@ -247,6 +266,54 @@ footer .musica li a:hover {
   font-family: "BBH Sans Bogle", sans-serif;
   font-weight: 400;
   font-size: 60px;
+}
+
+.tour-dates {
+  margin: 20px;
+}
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 180px 200px 1fr 100px;
+  grid-template-areas: "fecha ciudad lugar tickets";
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0 10px;
+  border-bottom: 2px solid #d71b0a;
+}
+.tour-row p {
+  color: #fde200;
+  font-size: 20px;
+  font-family: "Martian Mono", monospace;
+  margin: 0;
+}
+
+.tour-date {
+  grid-area: fecha;
+}
+
+.tour-location {
+  grid-area: ciudad;
+}
+
+.tour-venue {
+  grid-area: lugar;
+}
+
+.contact-form-propio {
+  background-color: #fde200;
+  padding: 30px;
+  border-radius: 8px;
+  color: #000000;
+}
+
+.form-control {
+  color: #f5f5dc;
+  border: 1px solid #d71b0a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
