@@ -1,0 +1,26 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.card {
+  width: 300px;
+  padding: 16px;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  background-image: url(../assets/img/black-plain-concrete-textured-background.jpg);
+  background-size: cover;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h3 {
+    margin: 16px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.card-container {
+  @include mixins.flex(row, center, center);
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 32px;
+}
+
+.single-container {
+  h2 {
+    font-family: variables.$header-font;
+    font-weight: 400;
+    text-align: center;
+    margin: 16px 0;
+  }
+}
+
+.carrusel-caption {
+  h3 {
+    font-family: variables.$header-font;
+    font-weight: 400;
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+.main-content {
+  @include mixins.flex-column;
+  align-items: center;
+  margin-top: 0;
+  background-color: variables.$color-fondo;
+
+  .logo {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.logo-caption {
+  color: variables.$color-secundario;
+  text-align: center;
+  font-family: variables.$header-font;
+  font-size: 35px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}

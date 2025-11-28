@@ -7,7 +7,7 @@ body {
 
 h1 {
   color: variables.$color-primario;
-  font-size: variables.$color-primario;
+  font-size: variables.$h1-font-size;
   font-family: variables.$header-font;
   font-style: normal;
   font-weight: 400;
@@ -16,6 +16,10 @@ h1 {
 
 h2 {
   font-size: variables.$h2-font-size;
+  color: variables.$color-secundario;
+}
+
+h3 {
   color: variables.$color-secundario;
 }
 
