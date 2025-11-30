@@ -16,6 +16,17 @@
   margin: 0 10px;
   border-bottom: 2px solid variables.$color-primario;
 
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "fecha"
+      "ciudad"
+      "lugar"
+      "tickets";
+    justify-items: center;
+    margin-top: 10px;
+  }
+
   p {
     color: variables.$color-secundario;
     font-size: variables.$p-font-size;

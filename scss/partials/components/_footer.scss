@@ -33,6 +33,31 @@ footer {
       }
     }
   }
+
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "redes musica"
+      "logo logo"
+      "copyright copyright";
+    gap: 40px 20px;
+    padding: 30px 10px;
+
+    img {
+      width: 100px;
+    }
+
+    .footer-logo {
+      justify-self: center;
+      align-self: center;
+    }
+
+    .redes,
+    .musica {
+      justify-self: center;
+      padding: 0 10px 0 10px;
+    }
+  }
 }
 
 .redes {

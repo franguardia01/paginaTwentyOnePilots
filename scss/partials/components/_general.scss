@@ -3,6 +3,10 @@
 body {
   font-family: variables.$main-font;
   background-color: variables.$color-fondo;
+
+  @media (max-width: 450px) {
+    margin: 0 16px;
+  }
 }
 
 h1 {
