@@ -18,3 +18,9 @@
     cursor: pointer;
   }
 }
+
+@mixin btn-scale($fondo, $color) {
+  background-color: $fondo;
+  color: $color;
+  transform: translateY(-5px);
+}
